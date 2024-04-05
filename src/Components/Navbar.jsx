@@ -17,7 +17,7 @@ const Navbar = () => {
           <nav>
             <ul className="flex space-x-10 ">
               <li className="hover:underline hover:text-orange-300 hover:opacity-95 hover:font-light">
-                <Link to="home">Home</Link>
+                <Link to="/Travel/">Home</Link>
               </li>
               <li className="hover:underline hover:text-orange-300 hover:opacity-95 hover:font-light">
                 <Link to="about">About</Link>
@@ -28,8 +28,11 @@ const Navbar = () => {
               <li className="hover:underline hover:text-orange-300 hover:opacity-95 hover:font-light">
                 <Link to="contact">Contact</Link>
               </li>
+
               <li>
-                <img src={SearchIcon} alt="search-icon" />
+                <button>
+                  <img src={SearchIcon} alt="search-icon" />
+                </button>
               </li>
             </ul>
           </nav>

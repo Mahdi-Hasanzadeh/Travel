@@ -7,6 +7,9 @@ import vector from "../assets/Vector 1.jpg";
 import dubai from "../assets/why choose us/unsplash_7tb-b37yHx4.jpg";
 import Sea from "../assets/why choose us/unsplash_CihXnvELE00.jpg";
 import CustomerImage from "../assets/Customer/unsplash_O3ymvT7Wf9U.jpg";
+import location1 from "../assets/Locations/unsplash_LQ_SoWQDk84.png";
+import location2 from "../assets/Locations/unsplash_LQ_SoWQDk84 (1).png";
+import location3 from "../assets/Locations/unsplash_LQ_SoWQDk84 (2).png";
 
 const Main = () => {
   return (
@@ -73,6 +76,7 @@ const Main = () => {
             <div className="picture section">
               <img src={dubai} alt="dubai" />
               <div className="info">
+                {/* I will add an book icon here when I start the desining of this part */}
                 <img src="" alt="guide-book" />
                 <p>professional Tour Guide</p>
               </div>
@@ -83,6 +87,7 @@ const Main = () => {
             <h3>Plan Your Trip With Us</h3>
             <div className="services">
               <div className="price-guarantee">
+                {/* I will add and icon for each services when I start the designing of this part */}
                 <img src="" alt="" />
                 <div className="price-info">
                   <p>Best Price Guarantee</p>
@@ -108,13 +113,17 @@ const Main = () => {
             </div>
           </div>
         </section>
-        <section className="plane-image-vector"></section>
+        <section className="plane-image-vector">
+          <img src={vector} alt="vector" />
+          <img src={plane} alt="plane" />
+        </section>
         <section className="dictation">
           <h3>Famous dectatin</h3>
           <h2>Our popular Dictation's</h2>
           <div className="slider">
+            {/* We can add more locations here in our sliders */}
             <div className="dictations-1">
-              <img src="" alt="" />
+              <img src={location1} alt="location1" />
               <h4>Lakshadweep</h4>
               <p>$45/person</p>
               <div className="location-info">
@@ -124,25 +133,33 @@ const Main = () => {
               </div>
             </div>
             <div className="dictations-2">
-              <img src="" alt="" />
-              <h4>Lakshadweep</h4>
-              <p>$45/person</p>
+              <img src={location2} alt="location2" />
+              <h4>Kaziranga</h4>
+              <p>$5/person</p>
               <div className="location-info">
-                <p>4days</p>
-                <p>10 person</p>
+                <p>15days</p>
+                <p>15 person</p>
                 <p>India</p>
               </div>
             </div>
             <div className="dictations-3">
-              <img src="" alt="" />
-              <h4>Lakshadweep</h4>
-              <p>$45/person</p>
+              <img src={location3} alt="location3" />
+              <h4>Sun Temple</h4>
+              <p>$15/person</p>
               <div className="location-info">
-                <p>4days</p>
-                <p>10 person</p>
-                <p>India</p>
+                <p>12days</p>
+                <p>15 person</p>
+                <p>Somalia</p>
               </div>
             </div>
+          </div>
+          {/* Bullet slider */}
+          <div className="bullet-slider">
+            <ul>
+              <li>*</li>
+              <li>*</li>
+              <li>*</li>
+            </ul>
           </div>
         </section>
 
@@ -210,12 +227,18 @@ const Main = () => {
               <h2>Client Testimonial</h2>
             </div>
             <div className="plane-vector">
-              <img src="" alt="" />
+              <img src={vector} alt="vector" />
+              <img src={plane} alt="plane" />
             </div>
           </div>
           <div className="customer-quote">
             <img src={CustomerImage} alt="customer-image" />
             <div>
+              <ul>
+                {/* I will add the arrow icon when I start designing this section */}
+                <li>left Arrow Icon</li>
+                <li>Right Arrow Icon</li>
+              </ul>
               <h4>Customer Name</h4>
               <h6>Customer Job</h6>
               <blockquote>
@@ -227,7 +250,10 @@ const Main = () => {
         </section>
 
         <section className="subscribe-to-us">
-          <div className="plane"></div>
+          <div className="plane-vector">
+            <img src={vector} alt="vector" />
+            <img src={plane} alt="plane" />
+          </div>
           <div className="subscribe-section">
             <h2>Subscribe To Get The Latest News About Us</h2>
             <p>
@@ -241,7 +267,10 @@ const Main = () => {
             />
             <button>Subscribe</button>
           </div>
-          <div className="plane"></div>
+          <div className="plane-vector">
+            <img src={vector} alt="vector" />
+            <img src={plane} alt="plane" />
+          </div>
         </section>
 
         <footer>
@@ -252,7 +281,14 @@ const Main = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
                 sapiente exercitationem autem iste, rem ad?
               </p>
-              <div className="social-media"></div>
+              <div className="social-media">
+                {/* I will add the icons of social media, when I start designing of this section */}
+                <ul>
+                  <li>facebook icon</li>
+                  <li>twitter icon</li>
+                  <li>instagram icon</li>
+                </ul>
+              </div>
             </section>
             <section className="travel-agency-services">
               <h3>services</h3>
@@ -267,12 +303,14 @@ const Main = () => {
             <section className="instagram">
               <h3>Instagram</h3>
               <div className="instagram-images">
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+                {/* We should add 6 images as sample here for our instagrams */}
+                {/* I will add the images when I start designing the footer section */}
+                <img src="" alt="image1" />
+                <img src="" alt="image2" />
+                <img src="" alt="image3" />
+                <img src="" alt="image4" />
+                <img src="" alt="image5" />
+                <img src="" alt="image6" />
               </div>
             </section>
             <section className="contact">
@@ -284,7 +322,9 @@ const Main = () => {
               </ul>
             </section>
           </div>
-          <div className="copyright">TravelToor@2024 all right reserve</div>
+          <div className="copyright">
+            <p>TravelToor@2024 all right reserve</p>
+          </div>
         </footer>
       </main>
     </>
